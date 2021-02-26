@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public title: string = 'Contador App';
   public numero: number = 10;
+
+  sumar() {
+    this.numero += 1;
+  }
+
+  restar(){
+    this.numero -= 1;
+  }
 }
