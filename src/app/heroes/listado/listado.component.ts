@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent {
   heroes: string[] = ['Spiderman', 'Ironman', 'Hulk', 'Thor', 'Capi'];
-  heroeBorrado: string = '' || 'Ninguno, los héroes están completos...';
+  heroeBorrado: string = '';
 
   borrarHeroe(): string|void{
-    this.heroeBorrado = this.heroes.pop() || 'No hay héroes para borrar.';
+    this.heroeBorrado = this.heroes.shift() || '';
   }
 }

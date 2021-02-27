@@ -1,6 +1,7 @@
 <h1>Heroes!</h1>
 <button (click)="borrarHeroe()">Borrar Héroe</button>
-<div>
+<br><br>
+<div *ngIf="heroeBorrado">
     <span>Héroe Borrado: {{ heroeBorrado }} </span>
 </div>
 <div>
