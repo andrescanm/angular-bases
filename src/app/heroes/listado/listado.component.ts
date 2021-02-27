@@ -5,5 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './listado.component.html'
 })
 export class ListadoComponent {
-  
+  heroes: string[] = ['Spiderman', 'Ironman', 'Hulk', 'Thor', 'Capi'];
+
+  borrarHeroe(): void{
+    this.heroes.pop();
+  }
 }
