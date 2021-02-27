@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
             <h3> La base es: <strong> {{ base }} </strong> </h3>
             <button (click)="acumular(base)"> + {{ base }} </button>
             <span> {{ numero }} </span>
-            <button (click)="acumular(-base)"> - {{ base }} </button>
-  `,
-  styleUrls: ['./contador.component.css']
+            <button (click)="acumular(-base)"> - {{ base }} </button>`
 })
 export class ContadorComponent {
   public title: string = 'Contador App';
