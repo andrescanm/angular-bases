@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent{
-  agregar( event:any ): void{
-    event.preventDefault();
-    console.log("OK!!!");
+  agregar(): void{
+    console.log("TEST - OK!!!");
   }
 }
