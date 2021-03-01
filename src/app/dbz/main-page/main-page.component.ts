@@ -1,10 +1,6 @@
 import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
-
-interface Personaje{
-  nombre: string,
-  poder: number
-}
+import { Personaje } from '../interfaces/dbz.interfaces';
 
 @Component({
   selector: 'app-main-page',
