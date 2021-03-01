@@ -23,6 +23,5 @@ export class DbzService {
     }
 
     constructor() {
-        console.log("Servicio Inicializado");
     }
 }
