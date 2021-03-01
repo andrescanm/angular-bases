@@ -1,7 +1,5 @@
-import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interfaces';
-import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-main-page',
