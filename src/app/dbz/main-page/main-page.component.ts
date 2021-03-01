@@ -7,10 +7,6 @@ import { Personaje } from '../interfaces/dbz.interfaces';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent{
-  nuevo: Personaje = {
-    nombre: '',
-    poder: 0
-  }
 
   personajes: Personaje[] = [
     {
@@ -23,15 +19,8 @@ export class MainPageComponent{
     }
   ]
 
-  agregar(): boolean{
-    if(this.nuevo.nombre.trim().length === 0){
-      return false;
-    }
-    this.personajes.push(this.nuevo);
-    this.nuevo = {
-      nombre: '',
-      poder: 0
-    }
-    return true;
+  nuevo: Personaje = {
+    nombre: "Maestro Roshi",
+    poder: 1000
   }
 }
